@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Slum Portal</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/20002.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/20002.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/20002.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/20002.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/20002.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
@@ -33,7 +38,45 @@
                     </li>
                 </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html">Register</a></span></div>
         </div>
-    </nav><img src="assets/img/map.jpg" width="100%">
+    </nav>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="max-width: 26%;box-shadow: 0px 0px 2px;">
+                    <h1 class="text-center" style="padding-top: 20px;padding-bottom: 20px;">Slum Population Maps</h1>
+                    <div style="padding: 20px;"><a class="btn btn-light action-button" role="button" href="map-del.html" style="text-align: center;background: rgb(104,199,198);color: rgb(255,255,255);border-radius: 32px;padding: 6px 20px;font-size: 18px;">Slum Map Of Delhi</a></div>
+                    <div
+                        style="padding: 20px;"><a class="btn btn-light action-button" role="button" href="map-mum.html" style="text-align: center;background: rgb(104,199,198);color: rgb(255,255,255);border-radius: 32px;padding: 6px 20px;font-size: 18px;">Slum Map Of Mumbai</a></div>
+                <div
+                    style="padding: 20px;"><a class="btn btn-light action-button" role="button" href="map-chen.html" style="text-align: center;background: rgb(104,199,198);color: rgb(255,255,255);border-radius: 32px;padding: 6px 20px;font-size: 18px;">Slum Map Of Chennai</a></div>
+            <div
+                style="padding: 20px;"><a class="btn btn-light action-button" role="button" href="map-kol.html" style="text-align: center;background: rgb(104,199,198);color: rgb(255,255,255);border-radius: 32px;padding: 6px 20px;font-size: 18px;">Slum Map Of Kolkata</a></div>
+    </div>
+    <div class="col-md-6" style="max-width: 70%;min-width: 70%;">
+        <h1 class="display-4" style="padding-top: 20px;padding-bottom: 40px;">Slum Map Segmentation</h1><p><strong>Your Picture </strong><span class="text-danger">*</span></p>
+<div class="file">
+            <!-- Upload image input-->
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm ">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+            </div>
+
+            <!-- Uploaded image area-->
+            <p class="font-italic text-dark text-center">The image uploaded will be rendered inside the box below.</p>
+            <div class="image-area mt-4 text-dark"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"  width=200></div>
+<div class="col d-none">
+    <p><strong>URL</strong><span class="text-danger">*</span></p>
+    <input id="urllink" name="url" type="url" class="form-control" readonly/>
+</div>
+</div>
+        <div style="text-align: center;padding: 10px;"><button class="btn btn-light action-button" type="button" style="text-align: center;background: rgb(104,199,198);color: rgb(255,255,255);border-radius: 32px;padding: 6px 20px;font-size: 20px;">Submit</button></div>
+    </div>
+    </div>
+    </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
